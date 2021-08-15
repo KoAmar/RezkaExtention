@@ -3,15 +3,12 @@
   "name": "Rezka Subtitles Keyboard Shortcuts",
   "version": "1.0",
 
-  "description": "Adds a solid red border to all webpages matching mozilla.org.",
-
-
-
+  "description": "Allows switch subtitles on hdrezka by pressing Shift+R(Русский) or Shift+E(Англиский). First, you need to open the language switching menu at least once. Позволяет переключать субтитры на hdrezka, нажатием Shift+R (русский) или Shift+E (английский). Предварительно нужно открыть меню переключения языков хотя бы один раз.",
 
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["borderify.js"]
+      "js": ["scripts.js"]
     }
   ]
 }
