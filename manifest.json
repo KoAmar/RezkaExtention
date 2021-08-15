@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "RezkaExtention",
+  "name": "Rezka Subtitles Keyboard Shortcuts",
   "version": "1.0",
 
   "description": "Adds a solid red border to all webpages matching mozilla.org.",
