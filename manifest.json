@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "RezkaExtention",
+  "version": "1.0",
+
+  "description": "Adds a solid red border to all webpages matching mozilla.org.",
+
+
+
+
+  "content_scripts": [
+    {
+      "matches": ["*://hdrezka.club/*/*/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+}
