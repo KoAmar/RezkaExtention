@@ -10,7 +10,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://hdrezka.club/*/*/*"],
+      "matches": ["<all_urls>"],
       "js": ["borderify.js"]
     }
   ]
