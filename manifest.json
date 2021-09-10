@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Rezka Subtitles Keyboard Shortcuts",
-  "version": "1.0",
+  "version": "1.2.2",
 
-  "description": "Allows switch subtitles on hdrezka by pressing Shift+R(Русский) or Shift+E(Англиский). First, you need to open the language switching menu at least once. Позволяет переключать субтитры на hdrezka, нажатием Shift+R (русский) или Shift+E (английский). Предварительно нужно открыть меню переключения языков хотя бы один раз.",
+  "description": "Allows switch subtitles on hdrezka by pressing Shift+R(Русский) or Shift+E(English). Позволяет переключать субтитры на hdrezka, нажатием Shift+R (русский) или Shift+E (английский).",
 
   "content_scripts": [
     {
