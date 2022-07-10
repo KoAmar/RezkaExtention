@@ -23,7 +23,6 @@ if (queryString.toLowerCase().includes("rezka")) {
         }
     }
 
-
     document.onkeydown = function KeyPress(e) {
         if (e.shiftKey) {
             switch (e.code) {
@@ -39,25 +38,19 @@ if (queryString.toLowerCase().includes("rezka")) {
         }
         switch (e.code) {
             case 'Numpad9': {
+                e.preventDefault();
                 clickLang('English');
                 break;
             }
             case 'Numpad7': {
+                e.preventDefault();
                 clickLang('Русский');
                 break;
             }
             case 'Numpad5': {
-                document.querySelector('#oframecdnplayer > pjsdiv:nth-child(8) > pjsdiv:nth-child(1) > pjsdiv:nth-child(1)').click();
+                document.querySelector('#pjsfrrscdnplayer + pjsdiv > video').click();
                 break;
             }
-            // case 'Numpad4': {
-            //     window.dispatchEvent(new KeyboardEvent('keydown', {key: 'ArrowLeft'}));
-            //     break;
-            // }
-            // case 'Numpad6': {
-            //     window.dispatchEvent(new KeyboardEvent(key, {key: 'ArrowRight'}));
-            //     break;
-            // }
         }
     };
 }
