@@ -1,28 +1,28 @@
 let queryString = window.location.href;
 
 if (queryString.toLowerCase().includes("rezka")) {
-    let player = document.querySelector('#oframecdnplayer');
-
     const ccCheckInterval = setInterval(function () {
-        let cc = document.querySelector('#cdnplayer_control_cc > pjsdiv:nth-child(3)')
+        let cc = document.querySelector('#cdnplayer_control_cc > pjsdiv:last-child')
         if (cc) {
             cc.click();
             setTimeout(cc.click(), 10)
             clearInterval(ccCheckInterval);
         }
-
     }, 1000);
-
+    setInterval(function () {
+        let cc = document.querySelector('#cdnplayer_control_cc > pjsdiv:last-child')
+        if (cc) {
+            cc.click();
+            setTimeout(cc.click(), 1)
+        }
+    }, 300000);
     function clickLang(lang) {
-        for (let a of player.querySelectorAll('pjsdiv')) {
-            if (a.hasAttribute('f2id')) {
-                if (a.textContent === lang) {
-                    a.click()
-                }
+        for (let a of document.querySelectorAll('#cdnplayer_settings > pjsdiv > pjsdiv')) {
+            if (a.textContent === lang) {
+                a.click()
             }
         }
     }
-
     document.onkeydown = function KeyPress(e) {
         if (e.shiftKey) {
             switch (e.code) {
